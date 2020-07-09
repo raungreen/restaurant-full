@@ -44,19 +44,22 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Burgers</td>
-                                                <td>2/2/2020</td>
-                                                <td>
-                                                    <a href="/admin/food-categories/1/edit"><i class="far fa-edit"></i></a>
-                                                </td>
-                                                <td>
-                                                    <a href="/admin/food-categories/1/delete" 
-                                                    onclick="if (! confirm('Are you sure you want to delete category?')) { return false; }">
-                                                    <i class="far fa-trash-alt"></a></i>
-                                                </td>
-                                            </tr>
+                                            @foreach ($categories as $category)
+                                                
+                                                <tr>
+                                                    <th scope="row">{{$category->id}}</th>
+                                                    <td>{{$category->title}}</td>
+                                                    <td>{{date('m/d/y', strtotime($category->updated_at))}}</td>
+                                                    <td>
+                                                        <a href="/admin/food-categories/{{$category->id}}/edit"><i class="far fa-edit"></i></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/admin/food-categories/{{$category->id}}/delete" 
+                                                        onclick="if (! confirm('Are you sure you want to delete user?')) { return false; }">
+                                                        <i class="far fa-trash-alt"></a></i>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
