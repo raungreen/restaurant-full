@@ -62,6 +62,14 @@ Route::get('/admin/members/{id}/delete', 'admin\MemberController@delete');
 Route::get('/admin/reservations', 'admin\ReservationController@index');
 Route::get('/admin/reservations/{id}/delete', 'admin\ReservationController@delete');
 
+// Admin Settings
+Route::get('/admin/settings/general', 'admin\SettingsController@general');
+Route::post('/admin/settings/general', 'admin\SettingsController@saveGeneral');
+Route::get('/admin/settings/seo', 'admin\SettingsController@seo');
+Route::post('/admin/settings/seo', 'admin\SettingsController@saveSeo');
+Route::get('/admin/settings/social', 'admin\SettingsController@social');
+Route::post('/admin/settings/social', 'admin\SettingsController@saveSocial');
+
 // Admin Authentication
 Route::get('/admin/register', function () {
     return view('admin/register');
