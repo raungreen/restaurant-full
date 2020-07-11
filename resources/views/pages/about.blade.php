@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('title')
+About - {{$settings["general"]->site_title}} 
+@endsection
+
+@section('description')
+Billy's Burgers has been around since the beginning of the Disco era. 
+@endsection
+
 @section('content')
     <div id="about-page">
     <div class="content-box">
