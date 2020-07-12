@@ -64,7 +64,7 @@
                                                     </td>
                                                     <td>
                                                         <a href="/admin/reservations/{{$reservation->id}}/delete" 
-                                                        onclick="if (! confirm('Are you sure you want to delete user?')) { return false; }">
+                                                        onclick="if (! confirm('Are you sure you want to delete reservation?')) { return false; }">
                                                         <i class="far fa-trash-alt"></a></i>
                                                     </td>
                                                 </tr>

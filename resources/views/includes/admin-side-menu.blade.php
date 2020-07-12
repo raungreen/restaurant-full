@@ -19,6 +19,7 @@
                                     </ul>
                                 </div>
                             </li>
+                            @if(Auth::user()->isAdmin())
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Menu</a>
                                 <div id="submenu-2" class="collapse submenu" style="">
@@ -54,6 +55,7 @@
                                     </ul>
                                 </div>
                             </li>
+                            @endif
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-rocket"></i>Customers</a>
                                 <div id="submenu-3" class="collapse submenu" style="">
@@ -75,7 +77,7 @@
                                                      <li class="nav-item">
                                                         <a class="nav-link" href="/admin/reservations">All  Reservations<span class="badge badge-secondary">New</span></a>
                                                         
-                                                            <a class="nav-link" href="/admin/reservations">New Reservations <span class="badge badge-secondary">New</span></a>
+                                                            <a class="nav-link" href="/admin/reservations/create"> Create Reservation <span class="badge badge-secondary">New</span></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -83,6 +85,7 @@
                                     </ul>
                                 </div>
                             </li>
+                            @if(Auth::user()->isAdmin())
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fa fa-fw fa-rocket"></i>Users</a>
                                 <div id="submenu-4" class="collapse submenu" style="">
@@ -96,6 +99,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            @endif
+                            @if(Auth::user()->isAdmin())
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fa fa-fw fa-rocket"></i>Settings</a>
                                 <div id="submenu-5" class="collapse submenu" style="">
@@ -112,6 +117,7 @@
                                     </ul>
                                 </div>
                             </li>
+                            @endif
                         </ul>
                     </div>
                 </nav>

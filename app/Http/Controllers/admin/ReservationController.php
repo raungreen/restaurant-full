@@ -20,7 +20,11 @@ class ReservationController extends Controller
         ]);
     }
     public function create(){
+        // $reservation = Reservation::All();
         return view('admin/reservations/create');
+        // return view('admin/reservations/create', [
+        //     'reservation' => $reservation
+        // ]);
     }
     public function store(){
         request()->validate([
@@ -45,7 +49,7 @@ class ReservationController extends Controller
     public function edit($id){
         $reservation = Reservation::find($id);
         return view('admin/reservations/edit', [
-            'category' => $reservation
+            'reservation' => $reservation
         ]);
     }
     public function update($id){

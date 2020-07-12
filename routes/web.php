@@ -63,6 +63,10 @@ Route::get('/admin/members/{id}/delete', 'admin\MemberController@delete');
 
 // Admin Reservations
 Route::get('/admin/reservations', 'admin\ReservationController@index');
+Route::get('/admin/reservations/create', 'admin\ReservationController@create');
+Route::post('/admin/reservations', 'admin\ReservationController@store');
+Route::get('/admin/reservations/{id}/edit', 'admin\ReservationController@edit');
+Route::put('/admin/reservations/{id}', 'admin\ReservationController@update');
 Route::get('/admin/reservations/{id}/delete', 'admin\ReservationController@delete');
 
 // Admin Settings
@@ -85,7 +89,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-View::composer(['home', 'pages/about', 'pages/contact', 'pages/offers', 'pages/reservations', 'thank-you', 'menu/index', 'menu/single-menu'], function ($view) {
+View::composer(['home', 'pages/about', 'pages/contact', 'pages/offers', 'pages/reservations', 'pages/thank-you', 'menu/index', 'menu/single-menu'], function ($view) {
     $generalSettings = GeneralSetting::find(1);
     $socialSettings = SocialSetting::find(1);
     $seoSettings = SeoSetting::find(1);

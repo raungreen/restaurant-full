@@ -1,4 +1,4 @@
-#waitlist-page {
+#reservations-page {
     padding: 100px;
 
     h1 {
@@ -43,7 +43,7 @@
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-    #waitlist-page {
+    #reservations-page {
         padding: 20px;
 
         h1 {
@@ -54,7 +54,7 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
-    #waitlist-page {
+    #reservations-page {
         padding: 20px;
     }
 }
