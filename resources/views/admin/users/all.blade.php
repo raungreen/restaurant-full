@@ -37,7 +37,8 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">id</th>
-                                                <th scope="col">Email</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Role Id</th>
                                                 <th scope="col">Date Created</th>
                                                 <th scope="col">Edit</th>
                                                 <th scope="col">Delete</th>
@@ -49,6 +50,7 @@
                                                 <tr>
                                                     <th scope="row">{{$user->id}}</th>
                                                     <td>{{$user->fname}} {{$user->lname}}</td>
+                                                    <td>{{$user->roles}}</td>
                                                     <td>{{date('m/d/y', strtotime($user->updated_at))}}</td>
                                                     <td>
                                                         <a href="/admin/users/{{$user->id}}/edit"><i class="far fa-edit"></i></a>
