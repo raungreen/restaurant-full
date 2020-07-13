@@ -921,6 +921,7 @@ h2 {
 
   #food-preview {
     width: 100%;
+    overflow: auto;
     padding: 20px;
   }
 

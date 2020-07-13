@@ -22,7 +22,7 @@ class FoodCategorySeeder extends Seeder
         DB::table('food_categories')->insert([
             'title' => 'burgers',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
-            'image_url' => '/img/hamburger-and-fries-png-4.png',
+            'image_url' => '/img/hamburger-and-fries-4.png',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now()
         ]);
@@ -50,7 +50,7 @@ class FoodCategorySeeder extends Seeder
         DB::table('food_categories')->insert([
             'title' => 'drinks',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
-            'image_url' => '/img/cupcake-Transparent.png',
+            'image_url' => '/img/summer-drinks.png',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now()
         ]);
