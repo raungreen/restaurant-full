@@ -1,7 +1,9 @@
 <div class="side-menu">
-  <a href="/" class="logo">
-    <img src="{{$settings["general"]->logo_image_url}}">
-  </a>
+  <div class="logo">
+    <a href="/" >
+      <img src="{{$settings["general"]->logo_image_url}}">
+    </a>
+  </div>
   <div class="menu">
     <div class="menu-title">
       Menu
