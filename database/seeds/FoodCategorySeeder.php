@@ -15,7 +15,7 @@ class FoodCategorySeeder extends Seeder
         DB::table('food_categories')->insert([
             'title' => 'starters',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
-            'image_url' => '/img/CHIPS.png',
+            'image_url' => '/img/chips.png',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now()
         ]);
